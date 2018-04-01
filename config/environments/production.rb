@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+config.log_level = :info
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -44,7 +44,7 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Decrease the log volume.
-  # config.log_level = :info
+   config.log_level = :info
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -60,7 +60,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'gentle-garden-7691.herokuapp.com'
+  host = 'safe-hollows-32111.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
